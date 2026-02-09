@@ -1,141 +1,634 @@
-
-
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>亨亨猫henghengmao.wang发布页 - 皮皮虾、哔哩哔哩、小红书、西瓜、头条、DY、KS、HS、TikTok、Instagram等国内外短视频平台下载 - 亨亨猫官方网站 - 哼哼猫官 - 亨亨猫去水印官网</title>
-    <meta name="keywords" content="hhm,henghengmao,hhmao,官方认证,VIP,亨亨猫,哼哼猫,亨亨猫解析,亨亨猫网站,外贸,出海,去水印,亨亨猫去水印,官方,网站,解析视频网站,短视频,短视频去水印,Instagram批量下载,抖音去水印,今日头条去水印,火山去水印,小红书去水印,快手视频去水印,西瓜视频解析下载,视频解析下载,批量下载">
-    <meta name="description" content="亨亨猫去水印网站 www.henghengmao.wang ：视频批量去水印解析下载工具，支持解析DY、KS、HS、西瓜、小红书、今日头条、美拍、淘宝等上百个平台的视频，提取出来的视频无水印，可以快速、方便地将视频去水印保存到手机相册、电脑本地，除了单个视频提取，还支持一键批量去水印提取作者所有视频。">
-<script src="gg.js" defer></script>
-<style>
-        body {
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>亨亨猫去水印工具_纳克猫视频解析 - 官方发布页 | 自动跳转最优线路</title>
+    <meta name="keywords" content="hhm,henghengmao,hhmao,meowload,官方认证,VIP,亨亨猫,哼哼猫,亨亨猫解析,亨亨猫网站,外贸,出海,去水印,亨亨猫去水印,官方,网站,解析视频网站,短视频,短视频去水印,Instagram批量下载,抖音去水印,今日头条去水印,火山去水印,小红书去水印,快手视频去水印,西瓜视频解析下载,视频解析下载,批量下载,最优线路">
+    <meta name="description" content="亨亨亨猫去水印工具_纳克猫视频解析官方发布页_www.meowload.cn_ 视频批量去水印解析下载工具，支持解析DY、KS、HS、西瓜、小红书、今日头条、美拍、淘宝等上百个平台的视频，提取出来的视频无水印，可以快速、方便地将视频去水印保存到手机相册、电脑本地，除了单个视频提取，还支持一键批量去水印提取作者所有视频。自动匹配最优访问线路，快速保存无水印视频到本地。">
+    <style>
+        /* 全局样式重置 & 基础配置 */
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh; /* 将body高度设置为视口高度 */
-            overflow: hidden; /* 隐藏溢出内容 */
-            display: flex; /* 使用flexbox布局 */
-            flex-direction: column; /* 纵向排列子元素 */
+            box-sizing: border-box;
         }
 
-        /* 背景图层 */
-        .background {
-            background-image: url('https://cn.bing.com/th?id=OHR.OktoberfestSwing_ROW4294317377_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');
-            background-size: cover; /* 背景图像覆盖整个区域 */
-            background-position: center; /* 背景图像居中 */
-            flex: 1; /* 使背景占满剩余空间 */
-            display: flex; /* 使用flexbox来居中内容 */
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-        }
-
-        .container {
-            width: 50%;
-            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            z-index: 10; /* 确保内容在背景前面 */
+        body {
+            height: 100vh;
+            overflow-x: hidden;
             display: flex;
-            flex-direction: column; /* 纵向排列子元素 */
-            align-items: center; /* 横向居中 */
+            flex-direction: column;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            font-size: 16px;
+            background-color: #f9f5fb;
+            position: relative;
         }
 
+        /* 背景图层 - 柔和渐变 */
+        .background {
+            background: linear-gradient(135deg, #fdf6f9 0%, #f5e8f2 100%);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 10px;
+            position: relative;
+        }
+
+        /* 主容器 */
+        .main-container {
+            width: 95%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 20px 0;
+        }
+
+        /* 猫咪容器 - 还原原有好看的猫耳造型 */
+        .cat-container {
+            background: #ffffff;
+            padding: 30px 20px 20px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 8px 24px rgba(230, 189, 221, 0.4);
+            border: 2px solid #f0d9eb;
+        }
+
+        /* 还原原有猫耳造型（非三角，更美观） */
+        .cat-container::before,
+        .cat-container::after {
+            content: "";
+            position: absolute;
+            top: -15px;
+            width: 40px;
+            height: 60px;
+            background: #ffffff;
+            border: 2px solid #f0d9eb;
+            border-bottom: none;
+            border-radius: 50% 50% 0 0;
+            box-shadow: inset 2px 0 rgba(230, 189, 221, 0.2);
+            z-index: 5;
+        }
+        .cat-container::before {
+            left: 15%;
+            transform: rotate(-30deg);
+        }
+        .cat-container::after {
+            right: 15%;
+            transform: rotate(30deg);
+        }
+
+        /* 广告板块 - 独立分离 + 长猫尾巴 */
+        .ad-section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 8px 24px rgba(230, 189, 221, 0.4);
+            border: 2px solid #f0d9eb;
+        }
+
+        /* 长猫尾巴 - 放在广告板块右侧 */
+        .cat-long-tail {
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%) rotate(20deg);
+            width: 35px;
+            height: 180px; /* 加长尾巴 */
+            background: linear-gradient(to bottom, #f0d9eb, #e6bdd9, #d9a5d9);
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(230, 189, 221, 0.3);
+            z-index: 5;
+        }
+
+        /* 标题 - 猫咪主题配色 */
         h1 {
             text-align: center;
-            color: #333;
+            color: #c274c2;
+            font-size: 1.8rem;
+            margin: 10px 0 20px;
+            position: relative;
+            z-index: 15;
+        }
+        h1::after {
+            content: "🐱";
+            margin-left: 10px;
+            font-size: 1.6rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #b85cb8;
+            margin: 20px 0 15px;
+            text-align: center;
+            z-index: 15;
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: #a74ba7;
+            margin: 10px 0;
+            text-align: center;
         }
 
         p {
-            line-height: 1.6;
-            color: #555;
-            text-align: center; /* 使文本也是居中的 */
-        }
-
-        .announcement {
-            background-color: #ffeb3b;
-            padding: 10px;
-            margin: 20px 0;
-            border-radius: 5px;
-            width: 100%; /* 使公告区域宽度100% */
-        }
-
-        .a1 {
-            display: block;
-            width: 100%; /* 使按钮宽度100% */
-            background: #007BFF;
-            color: #fff;
+            line-height: 1.7;
+            color: #555555;
             text-align: center;
-            padding: 10px;
+            font-size: 1rem;
+            margin: 10px 0;
+            z-index: 15;
+        }
+
+        /* 公告区 - 猫咪风格（支持多条公告排版） */
+        .announcement-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* 多条公告之间的间距 */
+            margin: 20px 0;
+        }
+        .announcement {
+            background-color: #fef0f7;
+            border: 2px solid #f0d9eb;
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+            font-size: 1rem;
+            color: #a74ba7;
+            line-height: 1.7;
+            z-index: 15;
+            /* 取消居中，左对齐展示 */
+            text-align: left;
+        }
+        .announcement-title {
+            font-weight: bold;
+            color: #c274c2;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            /* 取消居中，左对齐 */
+            justify-content: flex-start;
+            font-size: 1.05rem;
+        }
+        .announcement-title::before {
+            content: "📢";
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        .announcement-meta {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* 自定义链接样式 */
+        .custom-link {
+            color: #c274c2;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 10px 0; /* 添加上下边距以分隔按钮 */
+            font-weight: bold;
+        }
+        .custom-link:hover {
+            color: #a74ba7;
+            text-decoration: underline;
         }
 
-        .a1:hover {
-            background: #0056b3;
+        /* ========== 测速提醒弹窗样式 ========== */
+        .speed-test-modal {
+            /* 全屏遮罩 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(249, 245, 251, 0.8); /* 半透明背景，与页面主色调一致 */
+            z-index: 9999; /* 最高层级，覆盖所有内容 */
+            /* 居中对齐弹窗内容 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .speed-test-tip {
+            background-color: #ffffff;
+            border: 2px solid #f0d9eb;
+            padding: 20px 30px;
+            border-radius: 12px;
+            color: #a74ba7;
+            font-size: 1.05rem;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(230, 189, 221, 0.5);
+            max-width: 90%;
+        }
+        /* ========== 测速弹窗样式结束 ========== */
+
+        /* 提示框 - 配色统一 */
+        .alert { 
+            padding: 15px; 
+            border-radius: 12px; 
+            font-size: 1rem;
+            width: 100%;
+            text-align: center;
+            z-index: 15;
+        }
+        .alert-success { 
+            background: #fef0f7; 
+            color: #b85cb8; /* 统一主题色 */
+            border: 2px solid #f0d9eb;
+            font-size: 1.05rem;
         }
 
+        /* 智能加速系统样式 - 猫咪风格 */
+        .status-card { 
+            background: #fef7fb;
+            border-radius: 14px; 
+            padding: 20px 15px; 
+            margin: 20px 0; 
+            box-shadow: 0 4px 12px rgba(230, 189, 221, 0.2); 
+            width: 100%;
+            overflow-x: auto;
+            border: 2px solid #f0d9eb;
+            z-index: 15;
+        }
+        .best-node { 
+            border: 2px solid #c274c2;
+            box-shadow: 0 4px 16px rgba(194, 116, 194, 0.3);
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
+        th, td { 
+            padding: 12px 10px; 
+            text-align: left; 
+            border-bottom: 1px solid #f0d9eb;
+            word-break: break-word;
+        }
+        th {
+            color: #b85cb8;
+            background-color: #fef0f7;
+            font-weight: bold;
+        }
+
+        /* 链接容器 & 访问按钮 */
+        .url-container { 
+            display: flex; 
+            flex-direction: column;
+            align-items: flex-start; 
+            gap: 8px; 
+        }
+        .access-btn { 
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            background: linear-gradient(to right, #e6bdd9, #c274c2);
+            color: white;
+            border-radius: 8px;
+            font-size: 1rem;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        .access-btn:hover { 
+            background: linear-gradient(to right, #c274c2, #a74ba7);
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(230, 189, 221, 0.3);
+        }
+        .icon { vertical-align: middle; }
+        .domain-text {
+            font-size: 0.9rem;
+            color: #777777;
+            word-break: break-all;
+        }
+
+        /* 广告区域 - 独立板块 放大优化 */
+        .ad-container {
+            position: relative; 
+            width: 100%; 
+            max-width: 600px;
+            margin: 10px 0; 
+            border: 3px solid #f0d9eb; 
+            padding: 3px; 
+            border-radius: 12px;
+            z-index: 10;
+        }
+        .ad-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            min-height: 180px;
+            object-fit: cover;
+        }
+        .ad-label {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            background-color: rgba(194, 116, 194, 0.9); 
+            color: #ffffff;
+            padding: 4px 8px; 
+            font-size: 0.8rem; 
+            font-weight: bold;
+            border-radius: 0 0 8px 0;
+        }
+
+        /* 底部版权 */
         .footer {
             text-align: center;
-            margin: 10px;
-            color: #777;
-            font-size: 14px;
-            position: relative; /* 使footer相对定位 */
-            z-index: 20; /* 确保footer在背景上面 */
+            margin: 15px 10px;
+            color: #888888;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 20;
         }
-        .custom-link {
-            color: #FF0000 !important;
-            text-decoration: underline !important;
+
+        /* 响应式优化 - 全端适配 */
+        @media screen and (max-width: 768px) {
+            /* 移动端猫耳调整 */
+            .cat-container::before,
+            .cat-container::after {
+                width: 30px;
+                height: 50px;
+                top: -12px;
+            }
+            /* 移动端长尾调整 */
+            .cat-long-tail {
+                width: 25px;
+                height: 120px;
+                right: -20px;
+            }
+            .main-container {
+                gap: 15px;
+                margin: 10px 0;
+            }
+            .cat-container {
+                padding: 25px 15px 15px;
+            }
+            .ad-section {
+                padding: 15px;
+            }
+            .status-card {
+                padding: 15px 10px;
+            }
+            th, td {
+                padding: 10px 8px;
+                font-size: 0.9rem;
+            }
+            .alert-success {
+                font-size: 0.95rem;
+                padding: 12px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .ad-container {
+                max-width: 100%;
+                min-height: 150px;
+            }
+            .access-btn {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+            /* 移动端弹窗文字调整 */
+            .speed-test-tip {
+                padding: 15px 20px;
+                font-size: 0.95rem;
+            }
         }
-        /* 新增状态样式 */
-.status {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-left: 10px;
-}
-.status-success { background: #28a745; color: white; }
-.status-error { background: #dc3545; color: white; }
-.status-unknown { background: #6c757d; color: white; }
+
+        @media screen and (min-width: 992px) {
+            .main-container {
+                max-width: 1000px;
+            }
+            .cat-container {
+                padding: 40px 30px 30px;
+            }
+            .ad-section {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .ad-container {
+                max-width: 700px;
+                min-height: 220px;
+            }
+            /* 电脑端长尾加长 */
+            .cat-long-tail {
+                height: 220px;
+            }
+        }
+
+        /* 隐藏元素 */
+        .hide {
+            display: none;
+        }
     </style>
 </head>
 <body>
-<div class="background"> <!-- 使用背景容器 -->
-    <div class="container">
-        
-        <h1>亨亨猫 henghengmao.wang 发布页</h1>
-        <!-- 公告区 -->
-        <div class="announcement">
-            
-        </div>
-        <p>欢迎访问亨亨猫 henghengmao.wang 发布页！您可以在这里找到最新的网站进行访问。请点击下方网站进入：</p>
-<a class="a1" href="https://hhm.jx.cn/url.php" target="_blank">
-        访问 亨亨猫 自动选择最快的网址打开
-    </a>
-        <!-- 修改循环部分 -->
-    <a class="a1" href="https://www.henghengmao.wang" target="_blank">
-        访问 亨亨猫 主站域名        <span class="status status-success">可访问 262ms</span>
-    </a>
-    <a class="a1" href="https://wwww.meiwzj.com" target="_blank">
-        访问 亨亨猫 辅助域名一        <span class="status status-success">可访问 265ms</span>
-    </a>
-    <a class="a1" href="https://wwww.hhmvid.com" target="_blank">
-        访问 亨亨猫 辅助域名二        <span class="status status-success">可访问 1000ms</span>
-    </a>
-    <a class="a1" href="https://jx.meiwzj.com" target="_blank">
-        访问 亨亨猫 辅助域名三        <span class="status status-success">可访问 260ms</span>
-    </a>
-        <p></p>
-        <div style="position: relative; width: fit-content; margin: 2px; border: 2px solid #FFA500; padding: 2px; border-radius: 4px;"><a href="https://urlqh.cn/oivFC" target="_blank"><img src="https://hhm.jx.cn/360jisu.png" alt="360安全卫士" style="display: block;"></a><div style="position: absolute; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.8); padding: 2px 5px; font-size: 13px; font-weight: bold;">广告</div></div>
+
+<!-- 测速提醒弹窗结构 -->
+<div class="speed-test-modal" id="speed-test-modal">
+    <div class="speed-test-tip">
+        🐱 页面正在加载中，即将展示线路测速结果，请稍候...
     </div>
 </div>
-<!-- 版权区域 -->
-<div class="footer">
-    &copy; 2025 亨亨猫henghengmao.wang. 保留所有权利.
 
+<div class="background">
+    <div class="main-container">
+        <!-- 测速板块 -->
+        <div class="cat-container">
+            <h1>亨亨猫去水印工具_纳克猫视频解析  官方发布页</h1>
+
+            <!-- 公告区（支持多条公告） -->
+            <div class="announcement-wrapper">
+                                <div class="announcement">
+                    <div class="announcement-title">官方重要通知</div>
+                    <div class="announcement-content">1. 主站域名已更新为www.meowload.cn，建议收藏备用。<br>2. 如遇访问问题，请尝试切换下方备用线路。众多分站请认准本站！<br>3. 可通过 <a class='custom-link' href='/kf.php' target='_blank' rel='noopener noreferrer'><strong>联系在线客服</strong></a> 或访问 <a class='custom-link' href='https://gitee.com/zjqz/meowload/wikis/pages?sort_id=14381431&doc_id=6333341' target='_blank' rel='noopener noreferrer'><strong>帮助文档</strong></a> 获取帮助支持</div>
+                    <div class="announcement-meta">
+                        <span>更新时间：2025-01-01</span>
+                        <span>发布人：亨亨猫(纳克猫)</span>
+                    </div>
+                </div>
+                                <div class="announcement">
+                    <div class="announcement-title">功能优化提醒</div>
+                    <div class="announcement-content">最强文案提取功能已上线，支持区分说话人，支持多种格式导出！<a class='custom-link' href='https://www.meowload.cn/transcribe' target='_blank' rel='noopener noreferrer'><strong>>> 点击体验 <<</strong></a></div>
+                    <div class="announcement-meta">
+                        <span>更新时间：2025-12-15</span>
+                        <span>发布人：亨亨猫(纳克猫)</span>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- 自动跳转提示 -->
+            <div class="alert alert-success " id="jump-alert">
+                系统将在 <span id="countdown">10</span> 秒后自动跳转到最优线路：
+                <strong>https://www.henghengmao.wang</strong>
+            </div>
+            <div class="alert alert-success hide" id="no-line-alert">
+                暂未检测到可用线路，请手动尝试下方链接
+            </div>
+
+            <!-- 测速结果卡片 -->
+            <div class="status-card best-node" id="status-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>线路名称</th>
+                            <th>访问地址</th>
+                            <th>响应时间</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                                <td>主站</td>
+                                <td>
+                                                                        <div class="url-container">
+                                        <a href="https://www.meowload.cn" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="access-btn"
+                                           title="状态码：200">
+                                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                                                <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                            </svg>
+                                            访问该线路
+                                        </a>
+                                        <span class="domain-text">www.meowload.cn</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    77.8 ms                                </td>
+                                <td style="color: #b85cb8">
+                                    ✓ 正常                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>辅助一</td>
+                                <td>
+                                                                        <div class="url-container">
+                                        <a href="https://www.henghengmao.wang" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="access-btn"
+                                           title="状态码：200">
+                                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                                                <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                            </svg>
+                                            访问该线路
+                                        </a>
+                                        <span class="domain-text">www.henghengmao.wang</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    72.61 ms                                </td>
+                                <td style="color: #b85cb8">
+                                    ✓ 正常                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>辅助二</td>
+                                <td>
+                                                                        <div class="url-container">
+                                        <a href="https://hhm.org.cn" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="access-btn"
+                                           title="状态码：200">
+                                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                                                <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                            </svg>
+                                            访问该线路
+                                        </a>
+                                        <span class="domain-text">hhm.org.cn</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    80.73 ms                                </td>
+                                <td style="color: #b85cb8">
+                                    ✓ 正常                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>备用一</td>
+                                <td>
+                                                                        <div class="url-container">
+                                        <a href="https://wwww.meiwzj.com" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="access-btn"
+                                           title="状态码：200">
+                                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                                                <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                            </svg>
+                                            访问该线路
+                                        </a>
+                                        <span class="domain-text">wwww.meiwzj.com</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    91.96 ms                                </td>
+                                <td style="color: #b85cb8">
+                                    ✓ 正常                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>备用二</td>
+                                <td>
+                                                                        <div class="url-container">
+                                        <a href="https://wwww.hhmvid.com" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="access-btn"
+                                           title="状态码：200">
+                                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                                                <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                            </svg>
+                                            访问该线路
+                                        </a>
+                                        <span class="domain-text">wwww.hhmvid.com</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    78.66 ms                                </td>
+                                <td style="color: #b85cb8">
+                                    ✓ 正常                                </td>
+                            </tr>
+                                            </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 广告板块 - 独立分离 + 长尾巴 -->
+        <div class="ad-section">
+            <div class="cat-long-tail"></div>
+            <h3>官方推荐安全防护软件</h3>
+            <div class="ad-container">
+                <a href="https://urlqh.cn/oivFC"  target="_blank">
+                    <img src="https://hhm.wang/360jisu.png"  alt="安全工具推荐">
+                </a>
+                <div class="ad-label">推广</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2026 亨亨猫去水印工具_纳克猫视频解析官方发布页. 保留所有权利.
 </div>
 </body>
 </html>
