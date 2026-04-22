@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>亨亨猫去水印工具_纳克猫视频解析 - 官方发布页 | 自动跳转最优线路</title>
+    <title>哼哼猫（MeowLoad）视频解析去水印工具 - 官方引导页 | 自动跳转最优线路</title>
     <meta name="keywords" content="hhm,henghengmao,hhmao,meowload,官方认证,VIP,亨亨猫,哼哼猫,亨亨猫解析,亨亨猫网站,外贸,出海,去水印,亨亨猫去水印,官方,网站,解析视频网站,短视频,短视频去水印,Instagram批量下载,抖音去水印,今日头条去水印,火山去水印,小红书去水印,快手视频去水印,西瓜视频解析下载,视频解析下载,批量下载,最优线路">
-    <meta name="description" content="亨亨亨猫去水印工具_纳克猫视频解析官方发布页_www.meowload.cn_ 视频批量去水印解析下载工具，支持解析DY、KS、HS、西瓜、小红书、今日头条、美拍、淘宝等上百个平台的视频，提取出来的视频无水印，可以快速、方便地将视频去水印保存到手机相册、电脑本地，除了单个视频提取，还支持一键批量去水印提取作者所有视频。自动匹配最优访问线路，快速保存无水印视频到本地。">
+    <meta name="description" content="哼哼猫（MeowLoad）视频解析去水印工具官方引导页_www.meowload.cn_ 视频批量去水印解析下载工具，支持解析DY、KS、HS、西瓜、小红书、今日头条、美拍、淘宝等上百个平台的视频，提取出来的视频无水印，可以快速、方便地将视频去水印保存到手机相册、电脑本地，除了单个视频提取，还支持一键批量去水印提取作者所有视频。自动匹配最优访问线路，快速保存无水印视频到本地。">
     <style>
         /* 全局样式重置 & 基础配置 */
         * {
@@ -16,7 +17,7 @@
         }
 
         body {
-            height: 100vh;
+            min-height: 100vh; /* 把 height 改成 min-height！ */
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
@@ -85,7 +86,7 @@
         }
 
         /* 广告板块 - 独立分离 + 长猫尾巴 */
-        .ad-section {
+        .dd-section {
             background: #ffffff;
             padding: 20px;
             border-radius: 16px;
@@ -122,8 +123,9 @@
         }
         h1::after {
             content: "🐱";
-            margin-left: 10px;
-            font-size: 1.6rem;
+        }
+        h1::before {
+            content: "🐱";
         }
         h2 {
             font-size: 1.3rem;
@@ -306,14 +308,9 @@
             box-shadow: 0 3px 8px rgba(230, 189, 221, 0.3);
         }
         .icon { vertical-align: middle; }
-        .domain-text {
-            font-size: 0.9rem;
-            color: #777777;
-            word-break: break-all;
-        }
 
         /* 广告区域 - 独立板块 放大优化 */
-        .ad-container {
+        .dd-container {
             position: relative; 
             width: 100%; 
             max-width: 600px;
@@ -323,7 +320,7 @@
             border-radius: 12px;
             z-index: 10;
         }
-        .ad-container img {
+        .dd-container img {
             width: 100%;
             height: auto;
             display: block;
@@ -331,7 +328,7 @@
             min-height: 180px;
             object-fit: cover;
         }
-        .ad-label {
+        .dd-label {
             position: absolute; 
             top: 0; 
             left: 0; 
@@ -346,11 +343,14 @@
         /* 底部版权 */
         .footer {
             text-align: center;
-            margin: 15px 10px;
+            margin: 30px auto 40px; /* 上30px 下40px，足够的安全距离 */
+            padding: 0 15px;
             color: #888888;
-            font-size: 0.9rem;
+            font-size: 1rem;
             position: relative;
             z-index: 20;
+            max-width: 1000px; /* 和主容器宽度对齐，更美观 */
+            width: 100%;
         }
 
         /* 响应式优化 - 全端适配 */
@@ -375,7 +375,7 @@
             .cat-container {
                 padding: 25px 15px 15px;
             }
-            .ad-section {
+            .dd-section {
                 padding: 15px;
             }
             .status-card {
@@ -395,7 +395,7 @@
             h2 {
                 font-size: 1.2rem;
             }
-            .ad-container {
+            .dd-container {
                 max-width: 100%;
                 min-height: 150px;
             }
@@ -417,7 +417,7 @@
             .cat-container {
                 padding: 40px 30px 30px;
             }
-            .ad-section {
+            .dd-section {
                 padding: 25px;
             }
             h1 {
@@ -426,7 +426,7 @@
             h2 {
                 font-size: 1.4rem;
             }
-            .ad-container {
+            .dd-container {
                 max-width: 700px;
                 min-height: 220px;
             }
@@ -455,24 +455,24 @@
     <div class="main-container">
         <!-- 测速板块 -->
         <div class="cat-container">
-            <h1>亨亨猫去水印工具_纳克猫视频解析  官方发布页</h1>
+            <h1>哼哼猫（MeowLoad）视频解析去水印工具</h1>
 
             <!-- 公告区（支持多条公告） -->
             <div class="announcement-wrapper">
                                 <div class="announcement">
                     <div class="announcement-title">官方重要通知</div>
-                    <div class="announcement-content">1. 主站域名已更新为www.meowload.cn，建议收藏备用。<br>2. 如遇访问问题，请尝试切换下方备用线路。众多分站请认准本站！<br>3. 可通过 <a class='custom-link' href='/kf.php' target='_blank' rel='noopener noreferrer'><strong>联系在线客服</strong></a> 或访问 <a class='custom-link' href='https://gitee.com/zjqz/meowload/wikis/pages?sort_id=14381431&doc_id=6333341' target='_blank' rel='noopener noreferrer'><strong>帮助文档</strong></a> 获取帮助支持</div>
+                    <div class="announcement-content">1. 主站域名已更新为<strong>www.meowload.cn</strong>，建议收藏备用。<br>2. 如遇访问问题，请尝试切换下方备用线路。众多分站请认准本站！<br>3. 可通过 <a class='custom-link' href='/kf.php' target='_blank' rel='noopener noreferrer'><strong>联系在线客服</strong></a> 或访问 <a class='custom-link' href='https://gitee.com/zjqz/hhm.jx.cn/wikis/pages?sort_id=14381431&doc_id=6333341' target='_blank' rel='noopener noreferrer'><strong>帮助文档</strong></a> 获取帮助支持</div>
                     <div class="announcement-meta">
                         <span>更新时间：2025-01-01</span>
-                        <span>发布人：亨亨猫(纳克猫)</span>
+                        <span>发布人：哼哼猫（MeowLoad）</span>
                     </div>
                 </div>
                                 <div class="announcement">
                     <div class="announcement-title">功能优化提醒</div>
-                    <div class="announcement-content">最强文案提取功能已上线，支持区分说话人，支持多种格式导出！<a class='custom-link' href='https://www.meowload.cn/transcribe' target='_blank' rel='noopener noreferrer'><strong>>> 点击体验 <<</strong></a></div>
+                    <div class="announcement-content">最强AI图片编辑、图片生产、图片翻译、图片去水印等功能已上线！<a class='custom-link' href='https://www.meowload.cn/image' target='_blank' rel='noopener noreferrer'><strong>>> 点击体验 <<</strong></a></br>最强文案提取功能已上线，支持区分说话人，支持多种格式导出！<a class='custom-link' href='https://www.meowload.cn/transcribe' target='_blank' rel='noopener noreferrer'><strong>>> 点击体验 <<</strong></a></div>
                     <div class="announcement-meta">
-                        <span>更新时间：2025-12-15</span>
-                        <span>发布人：亨亨猫(纳克猫)</span>
+                        <span>更新时间：2026-01-28</span>
+                        <span>发布人：哼哼猫（MeowLoad）</span>
                     </div>
                 </div>
                             </div>
@@ -480,7 +480,7 @@
             <!-- 自动跳转提示 -->
             <div class="alert alert-success " id="jump-alert">
                 系统将在 <span id="countdown">10</span> 秒后自动跳转到最优线路：
-                <strong>https://www.henghengmao.wang</strong>
+                <strong>https://wwww.hhmvid.com</strong>
             </div>
             <div class="alert alert-success hide" id="no-line-alert">
                 暂未检测到可用线路，请手动尝试下方链接
@@ -512,11 +512,10 @@
                                             </svg>
                                             访问该线路
                                         </a>
-                                        <span class="domain-text">www.meowload.cn</span>
-                                    </div>
+                                        </div>
                                 </td>
                                 <td>
-                                    77.8 ms                                </td>
+                                    100.35 ms                                </td>
                                 <td style="color: #b85cb8">
                                     ✓ 正常                                </td>
                             </tr>
@@ -534,11 +533,10 @@
                                             </svg>
                                             访问该线路
                                         </a>
-                                        <span class="domain-text">www.henghengmao.wang</span>
-                                    </div>
+                                        </div>
                                 </td>
                                 <td>
-                                    72.61 ms                                </td>
+                                    91.05 ms                                </td>
                                 <td style="color: #b85cb8">
                                     ✓ 正常                                </td>
                             </tr>
@@ -556,11 +554,10 @@
                                             </svg>
                                             访问该线路
                                         </a>
-                                        <span class="domain-text">hhm.org.cn</span>
-                                    </div>
+                                        </div>
                                 </td>
                                 <td>
-                                    80.73 ms                                </td>
+                                    78.18 ms                                </td>
                                 <td style="color: #b85cb8">
                                     ✓ 正常                                </td>
                             </tr>
@@ -578,11 +575,10 @@
                                             </svg>
                                             访问该线路
                                         </a>
-                                        <span class="domain-text">wwww.meiwzj.com</span>
-                                    </div>
+                                        </div>
                                 </td>
                                 <td>
-                                    91.96 ms                                </td>
+                                    83.38 ms                                </td>
                                 <td style="color: #b85cb8">
                                     ✓ 正常                                </td>
                             </tr>
@@ -600,11 +596,10 @@
                                             </svg>
                                             访问该线路
                                         </a>
-                                        <span class="domain-text">wwww.hhmvid.com</span>
-                                    </div>
+                                        </div>
                                 </td>
                                 <td>
-                                    78.66 ms                                </td>
+                                    70.56 ms                                </td>
                                 <td style="color: #b85cb8">
                                     ✓ 正常                                </td>
                             </tr>
@@ -614,21 +609,21 @@
         </div>
 
         <!-- 广告板块 - 独立分离 + 长尾巴 -->
-        <div class="ad-section">
+        <div class="dd-section">
             <div class="cat-long-tail"></div>
             <h3>官方推荐安全防护软件</h3>
-            <div class="ad-container">
+            <div class="dd-container">
                 <a href="https://urlqh.cn/oivFC"  target="_blank">
                     <img src="https://hhm.wang/360jisu.png"  alt="安全工具推荐">
                 </a>
-                <div class="ad-label">推广</div>
+                <div class="dd-label">推广</div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="footer">
-    &copy; 2026 亨亨猫去水印工具_纳克猫视频解析官方发布页. 保留所有权利.
+    &copy; 2024-2026 哼哼猫（MeowLoad）视频解析去水印工具. 保留所有权利.
 </div>
 </body>
 </html>
